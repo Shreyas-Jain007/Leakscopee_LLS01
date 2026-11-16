@@ -1,0 +1,12 @@
+{
+  "name": "mul_hash_safe (fixed-time mix)",
+  "binary": "../bin/targets_gcc_O2",
+  "entry": "mul_hash_safe",
+  "params": [
+    {
+      "name": "x",
+      "role": "secret",
+      "kind": "int"
+    }
+  ]
+}

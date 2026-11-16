@@ -1,0 +1,25 @@
+{
+  "name": "pw_check_bad (secret-dependent branch)",
+  "binary": "../bin/targets_gcc_O2",
+  "entry": "pw_check_bad",
+  "params": [
+    {
+      "name": "guess",
+      "role": "public",
+      "kind": "inbuf",
+      "size": 16
+    },
+    {
+      "name": "secret",
+      "role": "secret",
+      "kind": "inbuf",
+      "size": 16
+    },
+    {
+      "name": "n",
+      "role": "public",
+      "kind": "int",
+      "value": 16
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "sbox_lookup_bad (secret-indexed table)",
+  "binary": "../bin/targets_gcc_O2",
+  "entry": "sbox_lookup_bad",
+  "params": [
+    {
+      "name": "key",
+      "role": "secret",
+      "kind": "inbuf",
+      "size": 16
+    },
+    {
+      "name": "n",
+      "role": "public",
+      "kind": "int",
+      "value": 16
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ct_eq (constant-time compare)",
+  "binary": "../bin/targets_gcc_O2",
+  "entry": "ct_eq",
+  "params": [
+    {
+      "name": "a",
+      "role": "public",
+      "kind": "inbuf",
+      "size": 16
+    },
+    {
+      "name": "b",
+      "role": "secret",
+      "kind": "inbuf",
+      "size": 16
+    },
+    {
+      "name": "n",
+      "role": "public",
+      "kind": "int",
+      "value": 16
+    }
+  ]
+}

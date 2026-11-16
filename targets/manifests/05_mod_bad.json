@@ -1,0 +1,18 @@
+{
+  "name": "mod_bad (variable-time division)",
+  "binary": "../bin/targets_gcc_O2",
+  "entry": "mod_bad",
+  "params": [
+    {
+      "name": "dividend",
+      "role": "secret",
+      "kind": "int"
+    },
+    {
+      "name": "modulus",
+      "role": "public",
+      "kind": "int",
+      "value": 257
+    }
+  ]
+}

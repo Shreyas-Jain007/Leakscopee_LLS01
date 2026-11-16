@@ -1,0 +1,19 @@
+{
+  "name": "no_table (table-free, safe)",
+  "binary": "../bin/targets_gcc_O2",
+  "entry": "no_table",
+  "params": [
+    {
+      "name": "key",
+      "role": "secret",
+      "kind": "inbuf",
+      "size": 16
+    },
+    {
+      "name": "n",
+      "role": "public",
+      "kind": "int",
+      "value": 16
+    }
+  ]
+}

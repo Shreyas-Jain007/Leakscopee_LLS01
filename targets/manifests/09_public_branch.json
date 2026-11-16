@@ -1,0 +1,25 @@
+{
+  "name": "public_branch (suspicious but safe)",
+  "binary": "../bin/targets_gcc_O2",
+  "entry": "public_branch",
+  "params": [
+    {
+      "name": "secret",
+      "role": "secret",
+      "kind": "inbuf",
+      "size": 16
+    },
+    {
+      "name": "pub_flag",
+      "role": "public",
+      "kind": "int",
+      "value": 1
+    },
+    {
+      "name": "pubtab",
+      "role": "public",
+      "kind": "inbuf",
+      "size": 16
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "_comment": "Ground truth for the benchmark. Each entry: expected verdict and, for leaky targets, the expected leak kind.",
+  "01_pw_check_bad":      {"verdict": "LEAKY", "kind": "secret_dependent_branch"},
+  "02_ct_eq":             {"verdict": "SAFE"},
+  "03_sbox_lookup_bad":   {"verdict": "LEAKY", "kind": "secret_dependent_memory"},
+  "04_no_table":          {"verdict": "SAFE"},
+  "05_mod_bad":           {"verdict": "LEAKY", "kind": "variable_time"},
+  "06_mul_hash_safe":     {"verdict": "SAFE"},
+  "07_spectre_gadget":    {"verdict": "LEAKY", "kind": "speculative"},
+  "08_spectre_safe":      {"verdict": "SAFE"},
+  "09_public_branch":     {"verdict": "SAFE"},
+  "10_spectre_masked_src":{"verdict": "LEAKY", "kind": "speculative", "compiler_dependent": true,
+     "_note": "SAFE on gcc -O0 and clang -O2, LEAKY on gcc -O2: the optimizer decides. Checked strictly only on the default gcc -O2 build."}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "spectre_gadget (Spectre-v1, speculative)",
+  "binary": "../bin/targets_gcc_O2",
+  "entry": "spectre_gadget",
+  "spec_window": 64,
+  "params": [
+    {
+      "name": "idx",
+      "role": "public",
+      "kind": "int",
+      "value": 10
+    },
+    {
+      "name": "secret",
+      "role": "secret",
+      "kind": "inbuf",
+      "size": 16
+    },
+    {
+      "name": "pub_len",
+      "role": "public",
+      "kind": "int",
+      "value": 4
+    },
+    {
+      "name": "probe",
+      "role": "public",
+      "kind": "outbuf",
+      "size": 16384
+    }
+  ]
+}
